@@ -27,9 +27,11 @@
   "Resume": "student-resume.pdf"  
 },
 "Project1": {
-    "Title": "Interesting Project 1",
-    "Desc": "This is a description of Project One.<br><br>It has a GitHub repo and more details shown in screenshots.",
+    "Title": "Student Progress Tracking App",
+    "Desc": "The Student’s Progress Tracking App is a comprehensive tool that facilitates monitoring and enhancing their academic performance. The primary goal of this system is to provide students with an intuitive and user-friendly platform, enabling them to manage their grades, assignments, and academic progress efficiently. The application provides a customized dashboard, a grade tracking system, and an assignment calendar, all of which cater to the specific needs of students in a straightforward and captivating manner. More information is provided in the System Proposal and the System Specification documents.",
     "GitHubRepo": "https://github.com",
+    "System Proposal": "",
+    "System Specification": "",
     "MainImage": "P1Main.png",
     "DetailImages": ["P1Detail1.png","P1Detail2.png","P1Detail3.png"]
   },
