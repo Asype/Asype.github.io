@@ -29,7 +29,7 @@
 "Project1": {
     "Title": "Student Progress Tracking App",
     "Desc": "The Student’s Progress Tracking App is a comprehensive tool that facilitates monitoring and enhancing their academic performance. The primary goal of this system is to provide students with an intuitive and user-friendly platform, enabling them to manage their grades, assignments, and academic progress efficiently. The application provides a customized dashboard, a grade tracking system, and an assignment calendar, all of which cater to the specific needs of students in a straightforward and captivating manner. More information is provided in the System Proposal and the System Specification documents in the Github Repo below.",
-    "GitHubRepo": "https://github.com",
+    "GitHubRepo": "https://github.com/Asype/Student-Progress-Tracking-App",
     "System Proposal": "System Proposal - Student Progress Tracker.docx",
     "System Specification": "System Specification - Student Progress Tracker.docx",
     "MainImage": "P1Main.png",
