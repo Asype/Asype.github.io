@@ -44,6 +44,13 @@ function updateHTML(configData) {
     if (!configData.Project2.GitHubRepo) {
       document.querySelector("#pfProject2Repo").style.display = "none";
     }
+    if (configData.Project2["3NUM"]) {
+      const siteLink = document.querySelector("#pfProject2Site");
+      siteLink.href = configData.Project2["3NUM"];
+      siteLink.style.display = "inline";
+    } else {
+      document.querySelector("#pfProject2Site").style.display = "none";
+    }
     if (configData.Project2.DetailImages.length<1) {
       document.querySelector("#openProject2").style.display = "none";
     }

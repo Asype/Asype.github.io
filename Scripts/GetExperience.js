@@ -29,7 +29,14 @@ function updateHTML(configData) {
   document.querySelector("#pfEmploymentText").innerHTML = configData.Experience.EmploymentText;
 
   document.querySelector("#expSkills>h2").innerHTML = "Skills";
-  document.querySelector("#pfSkills").innerHTML = configData.Experience.Skills.toString();
+  const skillsContainer = document.querySelector("#pfSkills");
+    skillsContainer.innerHTML = ""; 
+
+    configData.Experience.Skills.forEach(skillLine => {
+      const p = document.createElement("p");
+      p.textContent = skillLine;
+      skillsContainer.appendChild(p);
+  });
   document.querySelector("#pfSkillsText").innerHTML = configData.Experience.SkillsText;
 
   // document.querySelector("#pfResume").href = "./Content/".concat(configData.Experience.Resume);

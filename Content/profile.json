@@ -1,52 +1,65 @@
 {
-"About": {
-  "Name": "Jacob Miller",
-  "Currently": "Computer Science Student",
-  "Headshot": "Jacobs Picture.jpg",
-  "Thumbnail": "Jacobs Picture.jpg",
-  "AboutText": "Hi, I am Jacob Miller. I am a passionate computer science student with a keen interest in software development and programming. Currently, I am pursuing my undergraduate degree at Seattle Pacific University. I am dedicated to expanding my knowledge and skills in various areas of computer science, with a particular focus on C++ programming.<br><br>I enjoy tackling challenging programming projects and I thrive in collaborative environments where I can contribute my expertise and learn from my peers.<br><br>Beyond the classroom, I actively engage in extracurricular activities related to computer science, including hackathons, coding competitions, and open-source contributions. I believe in the importance of continuous learning and seek out opportunities to explore new technologies and methodologies."
-},
-"Contact": {
-  "EMail": "millerj38@spu.edu<br><br>",
-  "Phone": "425-785-7883",
-  "Portfolio": "https://asype.github.io/",
-  "LinkedIn": "https://www.linkedin.com/in/jacobmicahmiller/",
-  "GitHub": "https://github.com/Asype"
-},
-"Experience": {
-  "ExperienceText": "Use this area to explain how you got to where you are and what you are currently doing now.<br><br>This is a good spot to talk yourself up.",
-  "School": "Seattle Pacific University",
-  "Major": "Computer Science",
-  "Graduation": "June 2023",
-  "EducationText": "Use this to add some narrative to your education section",
-  "Employment": "Seattle Pacific University",
-  "Role": "Computer Science Lab Assistant",
-  "EmploymentText": "Use this to add some narrative to your employment section",
-  "Skills": ["C++", " JavaScript", " Node", " CSS"," HTML"],
-  "SkillsText": "Use this to add some narrative to your skills section",
-  "Resume": "student-resume.pdf"  
-},
-"Project1": {
-    "Title": "Student Progress Tracking App",
-    "Desc": "The Student’s Progress Tracking App is a comprehensive tool that facilitates monitoring and enhancing their academic performance. The primary goal of this system is to provide students with an intuitive and user-friendly platform, enabling them to manage their grades, assignments, and academic progress efficiently. The application provides a customized dashboard, a grade tracking system, and an assignment calendar, all of which cater to the specific needs of students in a straightforward and captivating manner. More information is provided in the System Proposal and the System Specification documents in the Github Repo below.",
-    "GitHubRepo": "https://github.com/Asype/Student-Progress-Tracking-App",
-    "System Proposal": "System Proposal - Student Progress Tracker.docx",
-    "System Specification": "System Specification - Student Progress Tracker.docx",
-    "MainImage": "Student Progress Tracker.png",
-    "DetailImages": ["P1Detail1.png","P1Detail2.png","P1Detail3.png"]
+  "About": {
+    "Name": "Jacob Miller",
+    "Currently": "Computer Science Student at Seattle Pacific University",
+    "Headshot": "Jacobs Picture.jpg",
+    "Thumbnail": "Jacobs Picture.jpg",
+    "AboutText": "Hi, I’m Jacob Miller, a full-stack software engineer and Computer Science student from Seattle Pacific University. I’m passionate about building user-focused software that balances intuitive design with robust functionality.<br><br>Previously, I worked as a Junior Engineer at <strong>3NUM</strong>, I’ve contributed to multiple projects in their identity and messaging suite, working across the stack, participating in agile standups via Slack, and delivering features through Linear-based sprint planning.<br><br>I co-developed <strong>WinterArk</strong>, a cross-platform fitness app built with Flutter and Node.js, featuring workout tracking, roast reminders, a social reels page, and real-time chat. I worked on both frontend and backend, including secure API design and background task handling.<br><br>I thrive in fast-paced, collaborative teams where I can design, code, and continuously improve products. From Flutter interfaces to scalable Node.js backends, I care about clean code, team feedback, and building things that work beautifully."
+  },
+  "Contact": {
+    "EMail": "jmillxr@outlook.com<br><br>millerj38@spu.edu<br><br>",
+    "Phone": "",
+    "Portfolio": "https://asype.github.io/",
+    "LinkedIn": "https://www.linkedin.com/in/jacobmicahmiller/",
+    "GitHub": "https://github.com/Asype"
+  },
+  "Experience": {
+    "ExperienceText": "Over the last year, I’ve collaborated with teams of engineers to deliver full-stack applications with real-world usage. From building REST APIs and handling WebSocket events to crafting user interfaces in Flutter, I’ve worked across the stack to ship polished features and solve technical challenges with efficiency and focus.",
+    "School": "Seattle Pacific University",
+    "Major": "Computer Science",
+    "Graduation": "June 2025",
+    "EducationText": "Completed coursework in Software Engineering, Data Structures, Systems Design, Operating Systems, Database Management, Computer networks, Cybersecurity and Algorithm Design and Analysis. Consistently applied academic learning to real-world projects like WinterArk and 3NUM Messenger REPL.",
+    "Employment": "3num Startup",
+    "Role": "Software Engineer Intern",
+    "EmploymentText": "Junior Engineer at a startup tech company, I work primarily as a full-stack developer with a focus on front-end development. I have contributed to multiple projects and am actively involved in the development of the 3NUM product suite. In addition to coding, I regularly participate in team meetings via Slack. The meetings discuss task planning, where we review upcoming tasks in Linear, share progress on current work, and demo completed features to gather feedback and improve our product.",
+    "Skills": [
+      "Frontend: HTML, CSS, JavaScript, Flutter, Dart",
+      "Backend: Node.js, Express.js, TypeScript",
+      "Database: MongoDB, Firebase",
+      "DevOps & Hosting: AWS EC2",
+      "Programming Languages: C++, Dart, TypeScript"
+    ],
+    "SkillsText": "Skilled in building full-stack applications with RESTful APIs, real-time data handling, mobile development in Flutter, and backend logic using Node.js and MongoDB.",
+    "Resume": "Jacob Miller 2025 RESUME.pdf"
+  },
+  "Project1": {
+    "Title": "WinterArk \u2013 Social Fitness App",
+    "Desc": "Cross-platform mobile app built with Flutter and Node.js, featuring workout planning, roast notifications, a gym buddy system with chat, and gamified streaks. Includes reminders, planned workouts, shared dashboards, and a reels page for community content.",
+    "GitHubRepo": "",
+    "System Proposal": "",
+    "System Specification": "",
+    "MainImage": "WinterArk.png",
+    "DetailImages": [
+      "winterark-1.png",
+      "winterark-2.png",
+      "winterark-3.png"
+    ]
   },
   "Project2": {
-    "Title": "Interesting Project 2",
-    "Desc": "This is a description of Project Two.<br><br>It also has a GitHub repo and more details shown in screenshots.",
-    "GitHubRepo": "https://github.com",
-    "MainImage": "P2Main.png",
-    "DetailImages": ["P2Detail1.png","P2Detail2.png","P2Detail3.png","P2Detail4.png"]
+    "Title": "Messenger REPL \u2013 3NUM",
+    "Desc": "Built a REPL-based interface in Node.js for real-time interaction with the 3NUM messaging API. Integrated WebSocket communication to handle events like messages, shields, and onboarding events. Includes command-based querying and testing tools for developers.",
+    "3NUM": "https://www.3num.co/",
+    "MainImage": "3num.png",
+    "DetailImages": [
+      "messengerrepl-1.png",
+      "messengerrepl-2.png"
+    ]
   },
   "Project3": {
-    "Title": "Interesting Project 3",
-    "Desc": "This is a description of Project Three.<br><br>It does not have a GitHub repo or any additional screenshots.",
+    "Title": "",
+    "Desc": "",
     "GitHubRepo": "",
-    "MainImage": "P3Main.png",
+    "MainImage": "",
     "DetailImages": []
   },
   "Project4": {

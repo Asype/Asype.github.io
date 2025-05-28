@@ -1,40 +1,42 @@
-/* baseline */
+/* ───────────────────────────────────────── */
+/* baseline                                 */
+/* ───────────────────────────────────────── */
 *, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-  
-html {
-    font-size: 62.5%;
-}
-  
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* menu */
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+/* ───────────────────────────────────────── */
+/* Sidebar Menu                             */
+/* ───────────────────────────────────────── */
 #menu {
-    display: flex;
-    flex-direction: column;
-    width: 15%;
-    /* background-color: #333; */
-    background: linear-gradient(#333, #808080);
-    text-align: left;
-    padding-top: 10px;
-    position: fixed;
-    top: 0;
-    left:0;
-    bottom: 0;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  background-color: #111;
+  position: fixed;
+  top: 0; left: 0; bottom: 0;
+  justify-content: space-between;
+  padding-top: 3rem;
 }
 
 .self-photo {
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 3px solid grey;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
@@ -47,142 +49,86 @@ body {
     border-radius: 50%;
 }
 
+/* Center & bold sidebar nav links */
 .menu-list {
-    list-style-type: none;
-    padding-top: 10px;
-    padding-left: 0;
-    margin: 0;
+  list-style: none;
+  margin-top: 4rem;
+  padding: 0;
 }
 
 .menu-list li {
-    padding: 20px;
-}
-
-.menu-list li:hover {
-    background-color: #555;
-    transition: color 0.3s ease, background-color 0.3s ease;
-    cursor: pointer;
+  padding: 2rem 0;
 }
 
 .menu-list a {
-    font-size: x-large;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 900;      /* bold */
+  text-align: center;    /* center */
 }
 
+.menu-list li:hover {
+  background-color: #222;
+}
+
+/* center & enlarge sidebar social icons */
 .icons {
-    margin: 0 30% 2rem 30%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content:space-around;
+  margin: 0;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .icons img {
-    width: 2.5rem;
+  /* bump size up */
+  width: 2.5rem;
+  height: 2.5rem;
+  /* force pure white */
+  filter: brightness(0) invert(1);
 }
 
-/* main */
+/* ───────────────────────────────────────── */
+/* Main Content                             */
+/* ───────────────────────────────────────── */
 .main-section {
-    margin-left: 15%;
-    padding: 10px;
-    height: 90vh;
+  margin-left: 15%;
+  padding: 3rem 5%;
 }
 
-.page-title {
-    color: black;
-    font-size: x-large;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
+/* hide that giant <img> if you had one at top */
+.main-section > img {
+  display: none;
 }
 
-/* Project Page */
-.project {
-    width: 80vw;
-    height: auto;
-    margin: 2rem;
-    padding: 1rem;
-    background-color: #f2f2f2;
-    border-radius: .5rem;
-    display: flex;
-    flex-direction: row;
+/* Page Title */
+.page-title h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #444;
+  padding-bottom: 1rem;
 }
 
-.project-image {
-    margin: 1rem 2rem 1rem 2rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.project-image img {
-    width: 40rem;
-    margin: 0 auto;
-    border-radius: 0.5rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem darkgray;
-}
-
-.project-image button {
-    margin-top: 0.5rem;
-    font-weight: bold;
-    max-width: 9rem;
-    position: left;
-}
-
-.project-detail {
-    margin: 1rem 2rem 1rem 2rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.project-detail h2 {
-    color: #333;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.project-detail p {
-    color: #666;
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-}
-
-project-detail a {
-    font-size: 1.6rem;
-}
-
-/* About Me Page */
+/* ───────────────────────────────────────── */
+/* Profile Header                           */
+/* ───────────────────────────────────────── */
 .about-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
 }
 
-.about-section {
-    margin: 20px;
-    padding: 10px;
-    /* background-color: #f2f2f2; */
-    border-radius: 5px;
-    text-align: left;
-}
-
-.about-section h2 {
-    color: #333;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.about-section p {
-    color: #666;
-    font-size: 16px;
-}
 .about-me-image {
-    width: 15%;
-    height: auto;
+    width: 10%;
+    height: 10%;
     border-radius: 50%;
-    border: 5px solid black;
+    border: 5px solid #222;
     background-position: center;
     background-size: cover;
     margin: 10px 20px;
@@ -194,16 +140,15 @@ project-detail a {
     display: block;
     border-radius: 50%;
 }
-
 #pfAboutName {
-    color: #333;
+    color: whitesmoke;
     font-size: xx-large;
     font-weight: bold;
     margin-top: 20px;
 }
 
 #pfAboutTitle {
-    color: #666;
+    color: whitesmoke;
     font-size: x-large;
     margin-top: 10px;
 }
@@ -213,110 +158,106 @@ project-detail a {
     margin-bottom: 20px;
     text-align: left;
 }
-
-/* Experience Page */
-.experience-section {
-    margin: 2rem;
-    padding: 1rem;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    /* height: 25%; */
+/* ───────────────────────────────────────── */
+/* Cards (About, Experience, Projects)       */
+/* ───────────────────────────────────────── */
+.about-section,
+.experience-section,
+.project {
+  background-color: #111;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 8px rgba(255,255,255,0.05);
 }
 
-#experience-info, #expResume{
-    background-color: inherit;
+.about-section h2,
+.experience-section h2,
+.project-detail h2 {
+  color: #fff;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
 }
 
-#expResume {
-    margin: 0 2rem 0 0;
-    padding: 0;
-    float: right;
+.about-section p,
+.experience-section p,
+.project-detail p {
+  color: #ccc;
+  font-size: 1.8rem;
+  line-height: 1.7;
+  margin-bottom: 0rem;
 }
 
-#pfResume {
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+/* ───────────────────────────────────────── */
+/* Links & Buttons                           */
+/* ───────────────────────────────────────── */
+a {
+  color: #4dc0ff; 
+  text-decoration: underline;
 }
 
-.experience-section h2 {
-    color: black;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+.contact-me a {
+  display: inline-block;
+  margin-bottom: 0rem; 
 }
 
-.experience-section p {
-    margin: 0.5rem;
-    color: #666;
-    font-size: 1.5rem;
+button,
+#pfResume,
+.project-image button {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-/* Project Image Carousel */
-#modalPage {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,.65);
-}
-  
-.carousel {
-    max-width: 75%;
-    position: relative;
-    top: 5%;
-    margin: 0 auto;
-    padding: 0 .5rem 1rem .5rem;
-    background-color: white;
-}
-  
-#imgList img {
-    display: block;
-    margin: 1rem auto 1rem auto;
-    max-height: 95%;
-    max-width: 95%;
-}
-  
-#prev, #next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 1.6rem;
-    color: red;
-    font-weight: bold;
-    font-size: 4rem;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-  
-#next {
-    right: 1%;
-    border-radius: 3px 0 0 3px;
-}
-    
-#prev {
-    left: 1%;
-    border-radius: 0 3px 3px 0;
+button:hover,
+#pfResume:hover,
+.project-image button:hover {
+  background-color: #333;
 }
 
-#prev:hover, #next:hover {
-    background-color: black;
+/* ───────────────────────────────────────── */
+/* Project Layout                            */
+/* ───────────────────────────────────────── */
+.project {
+  display: flex;
+  align-items: center;
 }
-  
-#XOut {
-    margin-top: .25rem;
-    padding: 0;
-    color: red;
-    text-align: right;
-    font-size: 2.5rem;
-    font-weight: bold;
+
+.project-image {
+  flex: 0 0 200px;
+  margin-right: 3rem;
 }
-  
-#XOut:hover, #Xout:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* make project links larger */
+.project-detail a {
+  font-size: 1.8rem;    
+  font-weight: 500;    
+  text-decoration: underline; 
+  color: #4dc0ff;      
+}
+
+#pfProject2Site {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/* ───────────────────────────────────────── */
+/* Responsive                                */
+/* ───────────────────────────────────────── */
+@media (max-width: 768px) {
+  #menu { width: 20%; }
+  .main-section { margin-left: 20%; padding: 2rem; }
+  .project { flex-direction: column; }
+  .project-image { margin: 0 auto 2rem; }
 }
